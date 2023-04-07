@@ -2,7 +2,6 @@
 2023 Hansung Capstone<br>
 ● 프로젝트명
 
-
 HSU CHAT
 
 ● 프로젝트 개요
@@ -11,7 +10,8 @@ HSU CHAT
 
 ● 사용할 언어
 
-HTML/VANILLA JS/WEB SOCKET IO 활용
+ <img src="https://img.shields.io/badge/HTML5-1166FB?-style=flat&logo=TypeScript&logoColor=white"/> <img src="https://img.shields.io/badge/javaScript-61DAFB?-style=flat&logo=TypeScript&logoColor=white"/> <img src="https://img.shields.io/badge/WEB SOCKET IO-6133FB?-style=flat&logo=TypeScript&logoColor=white"/> 활용
+
 
 ● 개발 환경
 

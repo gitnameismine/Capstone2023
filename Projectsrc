@@ -1,0 +1,512 @@
+chat.html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>�쒖꽦 Chat</title>
+</head>
+
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1><i class="fas fa-smile"></i> �쒖꽦 CHAT</h1>
+            <a id="leave-btn" class="btn">Leave Room</a>
+        </header>
+        <main class="chat-main">
+            <div class="chat-sidebar">
+                <h3><i class="fas fa-comments"></i> 怨쇰ぉ紐�:</h3>
+                <h2 id="room-name"></h2>
+                <h3><i class="fas fa-users"></i> �좎�紐⑸줉</h3>
+                <ul id="users"></ul>
+            </div>
+            <div class="chat-messages"></div>
+        </main>
+        <div class="chat-form-container">
+            <form id="chat-form">
+                <input id="msg" type="text" placeholder="Enter Message" required autocomplete="off" />
+                <button class="btn3"><i class="fas fa-paper-plane"></i> �꾩넚</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+        integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous">
+        //荑쇰━ ���됲꽣 �ъ슜, 荑쇰━�� �묎렐媛���
+        </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------
+index.html
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>�쒖꽦 CHAT</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="login-container">
+        <header class="login-header">
+            <h1>�쒖꽦 CHAT</h1>
+        </header>
+
+        <main class="login-main">
+            <div class="form-control">
+                <form method="post">
+                    <table>
+                        <tr>
+                            <td>
+                                ID:
+                                <input type="text" name="id" placeholder="ID瑜� �낅젰�섏꽭��" />
+                            </td>
+                            <td>PASSWORD: <input type="password" name="password" /></td>
+                        </tr>
+                    </table>
+                    <button type="submit" class="btn2">濡쒓렇��</button>
+                </form>
+                <a href="/signup" class="btn2">�뚯썝媛���</a>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
+
+----------------------------------------------------------------------------------------------------------------------------
+signup.html
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>�뚯썝媛���</title>
+
+    <script>
+        function onSignup() {
+            alert("�뚯썝媛��낆씠 �꾨즺�섏뿀�듬땲��!");
+        }
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="signup-container">
+        <header class="signup-header">
+            <h1>�뚯썝媛���</h1>
+        </header>
+
+        <main class="signup-main">
+            <div class="form-control">
+                <form method="post">
+                    <table>
+                        <tr>
+                            <td><label>Id</label></td>
+                            <td>
+                                <input type="text" name="id" placeholder="10�먮━ �댄븯�� ID �낅젰" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Password</label></td>
+                            <td>
+                                <input type="text" name="password" placeholder="10�먮━ �댄븯�� Password " />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label>�대쫫</label></td>
+                            <td>
+                                <input type="text" name="name" placeholder="�대쫫 �낅젰" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label>�꾪솕踰덊샇</label></td>
+                            <td>
+                                <input type="text" name="phone" placeholder="�꾪솕踰덊샇 �낅젰" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label>�대찓��</label></td>
+                            <td>
+                                <input type="text" name="email" placeholder="�대찓�� �낅젰" />
+                            </td>
+                        </tr>
+                    </table>
+                    <button type="submit" class="btn" onclick="onSignup()">
+              �뚯썝媛���
+            </button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------
+start.html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>�쒖꽦 CHAT</title>
+</head>
+
+<body>
+    <div class="join-container">
+        <header class="join-header">
+            <h1><i class="fas fa-smile"></i>�쒖꽦���숆탳 梨쀬빋</h1>
+        </header>
+        <main class="join-main">
+            <form action="chat.html">
+                <div class="form-control">
+                    <label for="username">�됰꽕��</label>
+                    <input type="text" name="username" id="username" placeholder="�묒냽�� �됰꽕�꾩쓣 �낅젰�섏꽭��" required />
+                </div>
+                <div class="form-control">
+                    <label for="room">���붾갑</label>
+                    <select name="room" id="room">
+              <option value="怨좉툒�뱁봽濡쒓렇�섎컢">怨좉툒�뱁봽濡쒓렇�섎컢</option>
+              <option value="�곗씠�곌낵��">�곗씠�곌낵��</option>
+              <option value="而댄벂�곕꽕�몄썙��">而댄벂�곕꽕�몄썙��</option>
+              <option value="�먮즺援ъ“">�먮즺援ъ“</option>
+              <option value="�댁쁺泥댁젣">�댁쁺泥댁젣</option>
+              <option value="�곗씠�곕쿋�댁뒪">�곗씠�곕쿋�댁뒪</option>
+            </select>
+                </div>
+                <button type="submit" class="btn">梨꾪똿諛� �낆옣!</button>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
+
+------------------------------------------------------------------------------------------------------------------------
+style.css
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+:root {
+    --dark-color-a: #115823;
+    --dark-color-b: #18741f;
+    --light-color: #e6e9ff;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background: var(--light-color);
+    margin: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 5px 15px;
+    background: var(--light-color);
+    color: #112d76;
+    border: 0;
+    font-size: 17px;
+    margin-top: 2vw;
+}
+
+.btn:hover,
+.btn2:hover,
+.btn3:hover {
+    height: 37px;
+    transition: 0.5s;
+    background-color: #112d76;
+    color: white;
+}
+
+.btn2 {
+    width: 100%;
+    cursor: pointer;
+    padding: 5px 15px;
+    background: var(--light-color);
+    color: #112d76;
+    border: 0;
+    font-size: 17px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.btn3 {
+    cursor: pointer;
+    padding: 5px 15px;
+    background: var(--light-color);
+    color: #112d76;
+    border: 0;
+    font-size: 17px;
+    margin-left: 1vw;
+}
+
+
+/* signup page */
+
+.signup-container {
+    max-width: 500px;
+    margin: 80px auto;
+    color: #fff;
+}
+
+.signup-header {
+    background: #112d76;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-main {
+    background: #4b65a6;
+    padding: 30px 40px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+}
+
+input,
+button {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+}
+
+
+/* login page */
+
+.login-container {
+    max-width: 500px;
+    margin: 80px auto;
+    color: #fff;
+}
+
+.login-header {
+    background: #112d76;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-main {
+    padding: 30px 40px;
+    background: #4b65a6;
+}
+
+
+/* Chat Page */
+
+.chat-container {
+    max-width: 1100px;
+    background: #fff;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.chat-header {
+    background: #112d76;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.chat-sidebar {
+    background: #4b65a6;
+    color: #fff;
+    padding: 20px 20px 60px;
+    overflow-y: scroll;
+}
+
+.chat-sidebar h2 {
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.chat-sidebar h3 {
+    margin-bottom: 15px;
+}
+
+.chat-sidebar ul li {
+    padding: 10px 0;
+}
+
+.chat-messages {
+    padding: 30px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.chat-messages .message {
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: var(--light-color);
+    border-radius: 5px;
+    overflow-wrap: break-word;
+}
+
+.chat-messages .message .meta {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--dark-color-b);
+    opacity: 0.7;
+    margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+    color: #777;
+    margin-left: 15px;
+}
+
+.chat-form-container {
+    padding: 20px 30px;
+    background: #112d76;
+}
+
+.chat-form-container form {
+    display: flex;
+}
+
+.chat-form-container input[type="text"] {
+    font-size: 16px;
+    padding: 5px;
+    height: 40px;
+}
+
+#msg {
+    width: 250%;
+}
+
+
+/* Join Page */
+
+.join-container {
+    max-width: 500px;
+    margin: 80px auto;
+    color: #fff;
+}
+
+.join-header {
+    background: #112d76;
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.join-main {
+    padding: 30px 40px;
+    background: #4b65a6;
+}
+
+.join-main p {
+    margin-bottom: 20px;
+}
+
+.join-main .form-control {
+    margin-bottom: 20px;
+}
+
+.join-main label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.join-main input[type="text"] {
+    font-size: 16px;
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+}
+
+.join-main select {
+    font-size: 16px;
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+}
+
+.join-main .btn {
+    margin-top: 20px;
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .chat-main {
+        display: block;
+    }
+    .chat-sidebar {
+        display: none;
+    }
+}

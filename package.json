@@ -6,7 +6,7 @@
     "start": "node server",
     "dev": "nodemon server"
   },
-  "author": "201621367이춘호",
+  "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {

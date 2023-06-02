@@ -28,3 +28,11 @@
 ![Untitled](https://user-images.githubusercontent.com/84308554/152974072-3e5480e7-f519-42a9-864f-9a4750256d51.png)
 
 # 👨🏻‍💻 팀원
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href=""><img src="width="100px;" alt=""/><br /><sub><b>김준원</b></sub></a><br /></td>
+      <td align="center"><a href=""><img src="" width="100px;" alt=""/><br /><sub><b>김도일</b></sub></a><br /></td>
+     <tr/>  
+  </tbody>
+</table>

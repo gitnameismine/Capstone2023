@@ -32,8 +32,9 @@
 <table>
   <tbody>
     <tr>
-      <td align="center"><a href=""><img src="width="100px;" alt=""/><br /><sub><b>김준원</b></sub></a><br /></td>
-      <td align="center"><a href=""><img src="" width="100px;" alt=""/><br /><sub><b>김도일</b></sub></a><br /></td>
+      <td align="center"><a href=""><img src="width="100px;" alt=""/><br /><sub><b>@gitnameismine
+</b></sub></a><br /></td>
+      <td align="center"><a href=""><img src="" width="100px;" alt=""/><br /><sub><b>@afmmdoil</b></sub></a><br /></td>
      <tr/>  
   </tbody>
 </table>

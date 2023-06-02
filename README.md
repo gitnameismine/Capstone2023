@@ -11,5 +11,5 @@
 
 
     
-# 설치 라이브러리
+# 실행 아키텍처
 ![Untitled](https://user-images.githubusercontent.com/84308554/152974072-3e5480e7-f519-42a9-864f-9a4750256d51.png)

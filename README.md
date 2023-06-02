@@ -2,10 +2,12 @@
 과목 별 대화방에서의 실시간 채팅 웹 어플리케이션 
 
 
-### Server 실행 
-<b>npm start</b>
-<br>
-port:3000
+# 실행 방법
+1. DB 생성<br>
+2. npm i<br>
+3. npm start<br>
+4. cmd > ipconfig > ipv4 확인<br>
+5. 주소창에 ipv4:3000<br>
 
 
     

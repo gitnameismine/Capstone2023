@@ -11,10 +11,5 @@
 
 
     
-   ### 설치 라이브러리
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "moment": "^2.29.1",
-    "mysql": "^2.18.1",
-    "socket.io": "^4.4.0"
+# 설치 라이브러리
 ![Untitled](https://user-images.githubusercontent.com/84308554/152974072-3e5480e7-f519-42a9-864f-9a4750256d51.png)

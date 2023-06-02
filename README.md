@@ -1,8 +1,11 @@
 # HSU-CHAT
-과목 별 대화방에서의 실시간 채팅 웹 어플리케이션 
 
+# 📄 목차
 
-# 실행 방법
+# 🔍 개요
+과목 별 대화방에서의 실시간 채팅 웹 어플리케이션.
+
+# 📁 실행 방법
 1. MYSQL DB 생성<br>
 2. npm i<br>
 3. npm start<br>
@@ -11,5 +14,5 @@
 
 
     
-# 실행 아키텍처
+# 🌐 실행 아키텍처
 ![Untitled](https://user-images.githubusercontent.com/84308554/152974072-3e5480e7-f519-42a9-864f-9a4750256d51.png)

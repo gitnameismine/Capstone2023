@@ -13,7 +13,7 @@
 5. 웹 브라우저 주소창에 ipv4:3000 입력<br>
 
 # 🔗 주요 적용 기술 및 구조
-⌨️ 프론트엔드<br><br> <img src="https://img.shields.io/badge/HTML5-007396?style=flat&logo=Java&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-007396?style=flat&logo=Java&logoColor=white"/> <img src="https://img.shields.io/badge/VJS-007396?style=flat&logo=Java&logoColor=white"/><br><br>
+⌨️ 프론트엔드<br><br> <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-007396?style=flat&logo=Java&logoColor=white"/> <img src="https://img.shields.io/badge/VJS-007396?style=flat&logo=Java&logoColor=white"/><br><br>
 📡 백엔드<br><br> <img src="https://img.shields.io/badge/Node.js-007396?style=flat&logo=Java&logoColor=white"/> <img src="https://img.shields.io/badge/MYSQL-007396?style=flat&logo=Java&logoColor=white"/>
     
 # 🌐 실행 아키텍처

@@ -1,4 +1,4 @@
-# HSU-CHAT
+# <div align="center">HSU-CHAT
 
 # 📄 목차
 

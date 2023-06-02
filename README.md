@@ -3,11 +3,11 @@
 
 
 # 실행 방법
-1. DB 생성<br>
+1. MYSQL DB 생성<br>
 2. npm i<br>
 3. npm start<br>
-4. cmd > ipconfig > ipv4 확인<br>
-5. 주소창에 ipv4:3000<br>
+4. cmd > ipconfig > ipv4 주소 확인<br>
+5. 웹 브라우저 주소창에 ipv4:3000 입력<br>
 
 
     

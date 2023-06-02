@@ -10,7 +10,8 @@
 # 🔍 개요
 과목 별 대화방에서의 실시간 채팅 웹 어플리케이션. 같은 IP주소를 받아 서로 다른 기기들끼리 쌍방향 간 채팅을 지원한다. 
     
-#프로젝트 
+# 프로젝트 
+    
 <img width="757" alt="프로젝트 개요" src="https://github.com/gitnameismine/Capstone2023/assets/118046196/f5cc6cd7-b652-4594-8a7e-bdfeae46fd83">
 
 # 📁 실행 방법
